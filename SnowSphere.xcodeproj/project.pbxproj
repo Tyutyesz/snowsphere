@@ -15,6 +15,11 @@
 		CE0BAA0E1A3B4C0500FE41CC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0BAA0D1A3B4C0500FE41CC /* Images.xcassets */; };
 		CE0BAA111A3B4C0500FE41CC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0BAA0F1A3B4C0500FE41CC /* LaunchScreen.xib */; };
 		CE0BAA1D1A3B4C0600FE41CC /* SnowSphereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0BAA1C1A3B4C0600FE41CC /* SnowSphereTests.m */; };
+		CE0BAA2A1A3B4FF500FE41CC /* christmas-bells.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE0BAA271A3B4FF500FE41CC /* christmas-bells.mp3 */; };
+		CE0BAA2B1A3B4FF500FE41CC /* snow@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0BAA281A3B4FF500FE41CC /* snow@2x~iphone.png */; };
+		CE0BAA2C1A3B4FF500FE41CC /* snow~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0BAA291A3B4FF500FE41CC /* snow~iphone.png */; };
+		CE0BAA301A3B50A500FE41CC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0BAA2F1A3B50A500FE41CC /* MainViewController.m */; };
+		CE0BAA321A3B55C300FE41CC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0BAA311A3B55C300FE41CC /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +47,12 @@
 		CE0BAA161A3B4C0600FE41CC /* SnowSphereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnowSphereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0BAA1B1A3B4C0600FE41CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0BAA1C1A3B4C0600FE41CC /* SnowSphereTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnowSphereTests.m; sourceTree = "<group>"; };
+		CE0BAA271A3B4FF500FE41CC /* christmas-bells.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "christmas-bells.mp3"; sourceTree = "<group>"; };
+		CE0BAA281A3B4FF500FE41CC /* snow@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snow@2x~iphone.png"; sourceTree = "<group>"; };
+		CE0BAA291A3B4FF500FE41CC /* snow~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snow~iphone.png"; sourceTree = "<group>"; };
+		CE0BAA2E1A3B50A500FE41CC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		CE0BAA2F1A3B50A500FE41CC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CE0BAA311A3B55C300FE41CC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0BAA321A3B55C300FE41CC /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +77,7 @@
 		CE0BA9F11A3B4C0500FE41CC = {
 			isa = PBXGroup;
 			children = (
+				CE0BAA311A3B55C300FE41CC /* AVFoundation.framework */,
 				CE0BA9FC1A3B4C0500FE41CC /* SnowSphere */,
 				CE0BAA191A3B4C0600FE41CC /* SnowSphereTests */,
 				CE0BA9FB1A3B4C0500FE41CC /* Products */,
@@ -83,8 +96,8 @@
 		CE0BA9FC1A3B4C0500FE41CC /* SnowSphere */ = {
 			isa = PBXGroup;
 			children = (
-				CE0BAA011A3B4C0500FE41CC /* AppDelegate.h */,
-				CE0BAA021A3B4C0500FE41CC /* AppDelegate.m */,
+				CE0BAA261A3B4FD500FE41CC /* assets */,
+				CE0BAA2D1A3B507000FE41CC /* ViewControllers */,
 				CE0BAA071A3B4C0500FE41CC /* ViewController.h */,
 				CE0BAA081A3B4C0500FE41CC /* ViewController.m */,
 				CE0BAA0A1A3B4C0500FE41CC /* Main.storyboard */,
@@ -99,6 +112,8 @@
 		CE0BA9FD1A3B4C0500FE41CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE0BAA011A3B4C0500FE41CC /* AppDelegate.h */,
+				CE0BAA021A3B4C0500FE41CC /* AppDelegate.m */,
 				CE0BA9FE1A3B4C0500FE41CC /* Info.plist */,
 				CE0BA9FF1A3B4C0500FE41CC /* main.m */,
 			);
@@ -120,6 +135,25 @@
 				CE0BAA1B1A3B4C0600FE41CC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE0BAA261A3B4FD500FE41CC /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				CE0BAA271A3B4FF500FE41CC /* christmas-bells.mp3 */,
+				CE0BAA281A3B4FF500FE41CC /* snow@2x~iphone.png */,
+				CE0BAA291A3B4FF500FE41CC /* snow~iphone.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		CE0BAA2D1A3B507000FE41CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE0BAA2E1A3B50A500FE41CC /* MainViewController.h */,
+				CE0BAA2F1A3B50A500FE41CC /* MainViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +236,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0BAA2C1A3B4FF500FE41CC /* snow~iphone.png in Resources */,
 				CE0BAA0C1A3B4C0500FE41CC /* Main.storyboard in Resources */,
 				CE0BAA111A3B4C0500FE41CC /* LaunchScreen.xib in Resources */,
+				CE0BAA2A1A3B4FF500FE41CC /* christmas-bells.mp3 in Resources */,
+				CE0BAA2B1A3B4FF500FE41CC /* snow@2x~iphone.png in Resources */,
 				CE0BAA0E1A3B4C0500FE41CC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +262,7 @@
 				CE0BAA031A3B4C0500FE41CC /* AppDelegate.m in Sources */,
 				CE0BAA061A3B4C0500FE41CC /* SnowSphere.xcdatamodeld in Sources */,
 				CE0BAA091A3B4C0500FE41CC /* ViewController.m in Sources */,
+				CE0BAA301A3B50A500FE41CC /* MainViewController.m in Sources */,
 				CE0BAA001A3B4C0500FE41CC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SnowSphere/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SnowSphere/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
