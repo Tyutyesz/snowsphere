@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "snowView.h"
 
 @interface MainViewController ()
 
@@ -15,7 +16,9 @@
 
 @end
 
-@implementation MainViewController
+@implementation MainViewController {
+    snowView *snowOverlay;
+}
 
 
 
@@ -40,6 +43,11 @@
     AVAudioPlayer *theAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&error];
     [theAudioPlayer prepareToPlay];
     self.audioPlayer = theAudioPlayer;
+    
+    
+    snowOverlay = [[snowView alloc] initWithFrame:self.view.frame];
+    [self.view addSubview:snowOverlay];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -62,6 +70,7 @@
 -(IBAction)playSound
 {
     [self.audioPlayer play];
+    [snowOverlay beginSnowAnimation];
 }
 
 /*

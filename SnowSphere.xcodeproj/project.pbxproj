@@ -20,6 +20,7 @@
 		CE0BAA2C1A3B4FF500FE41CC /* snow~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0BAA291A3B4FF500FE41CC /* snow~iphone.png */; };
 		CE0BAA301A3B50A500FE41CC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0BAA2F1A3B50A500FE41CC /* MainViewController.m */; };
 		CE0BAA321A3B55C300FE41CC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0BAA311A3B55C300FE41CC /* AVFoundation.framework */; };
+		CE198A701A3DFB86002AB789 /* snowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE198A6F1A3DFB86002AB789 /* snowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		CE0BAA2E1A3B50A500FE41CC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		CE0BAA2F1A3B50A500FE41CC /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		CE0BAA311A3B55C300FE41CC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE198A6E1A3DFB86002AB789 /* snowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snowView.h; sourceTree = "<group>"; };
+		CE198A6F1A3DFB86002AB789 /* snowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				CE0BAA261A3B4FD500FE41CC /* assets */,
 				CE0BAA2D1A3B507000FE41CC /* ViewControllers */,
 				CE0BAA071A3B4C0500FE41CC /* ViewController.h */,
+				CE198A6E1A3DFB86002AB789 /* snowView.h */,
+				CE198A6F1A3DFB86002AB789 /* snowView.m */,
 				CE0BAA081A3B4C0500FE41CC /* ViewController.m */,
 				CE0BAA0A1A3B4C0500FE41CC /* Main.storyboard */,
 				CE0BAA0D1A3B4C0500FE41CC /* Images.xcassets */,
@@ -264,6 +269,7 @@
 				CE0BAA091A3B4C0500FE41CC /* ViewController.m in Sources */,
 				CE0BAA301A3B50A500FE41CC /* MainViewController.m in Sources */,
 				CE0BAA001A3B4C0500FE41CC /* main.m in Sources */,
+				CE198A701A3DFB86002AB789 /* snowView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +464,7 @@
 				CE0BAA221A3B4C0600FE41CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE0BAA231A3B4C0600FE41CC /* Build configuration list for PBXNativeTarget "SnowSphereTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +473,7 @@
 				CE0BAA251A3B4C0600FE41CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
