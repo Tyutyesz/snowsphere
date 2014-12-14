@@ -9,22 +9,47 @@
 #import "MainViewController.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface MainViewController (){
-    AVAudioPlayer *audioPlayer;
-}
+@interface MainViewController ()
+
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @end
 
 @implementation MainViewController
 
+
+
+- (BOOL)canBecomeFirstResponder{
+    
+    return YES;
+}
+
+-(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (event.subtype == UIEventSubtypeMotionShake) {
+        [self playSound];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSString *path = [NSString stringWithFormat:@"%@christmas-bells.mp3", [[NSBundle mainBundle] resourcePath]];
-    NSURL *soundUrl = [NSURL fileURLWithPath:path];
-    
-    // Create audio player object and initialize with URL to sound
-    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    NSError *error;
+    NSString *soundPath =[[NSBundle mainBundle] pathForResource:@"christmas-bells" ofType:@"mp3"];
+    NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
+    AVAudioPlayer *theAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&error];
+    [theAudioPlayer prepareToPlay];
+    self.audioPlayer = theAudioPlayer;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self becomeFirstResponder];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [self resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,25 +57,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)canBecomeFirstResponder{
-    
-    return YES;
-}
 
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-    if (motion == UIEventSubtypeMotionShake)
-    {
-        [self showAlert];
-        
-    } 
-}
 
--(IBAction)showAlert
+-(IBAction)playSound
 {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello World" message:@"This is my first app!" delegate:nil cancelButtonTitle:@"Awesome" otherButtonTitles:nil];
-    [audioPlayer play];
-    [alertView show];
+    [self.audioPlayer play];
 }
 
 /*
