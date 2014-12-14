@@ -168,10 +168,31 @@
                                     <action selector="laughButton:" destination="2aW-zI-mPx" eventType="touchUpInside" id="aM4-7E-QgX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5g-Hg-rjp">
+                                <rect key="frame" x="215" y="400" width="171" height="30"/>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.47843137250000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="4Fm-Bz-m41"/>
+                                    <constraint firstAttribute="height" constant="30" id="YBl-Wl-K5B"/>
+                                    <constraint firstAttribute="width" constant="171" id="c5j-cb-chB"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="v40-O5-bc3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Vissza">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="2aW-zI-mPx" eventType="touchUpInside" id="Z0I-RO-pEF"/>
+                                    <action selector="laughButton:" destination="2aW-zI-mPx" eventType="touchUpInside" id="vPh-4w-gV6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.36862745098039218" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="c5g-Hg-rjp" secondAttribute="centerX" id="DfP-34-FVq"/>
                             <constraint firstAttribute="centerX" secondItem="Deg-1F-GX4" secondAttribute="centerX" id="DrD-7l-NWQ"/>
+                            <constraint firstItem="iJs-26-Pe6" firstAttribute="top" secondItem="c5g-Hg-rjp" secondAttribute="bottom" constant="170" id="HHD-02-KcM"/>
                             <constraint firstItem="Deg-1F-GX4" firstAttribute="top" secondItem="FqD-Wr-NiZ" secondAttribute="bottom" constant="70" id="MAT-8g-80D"/>
                         </constraints>
                     </view>
@@ -180,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="573" y="479"/>
         </scene>
-        <!--View Controller-->
+        <!--Christmas View Controller-->
         <scene sceneID="ZNk-xz-7Qc">
             <objects>
-                <viewController id="Liz-0S-dSv" sceneMemberID="viewController">
+                <viewController id="Liz-0S-dSv" customClass="ChristmasViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1eW-Ra-dLj"/>
                         <viewControllerLayoutGuide type="bottom" id="BAY-S1-NaK"/>
@@ -191,12 +212,81 @@
                     <view key="view" contentMode="scaleToFill" id="G6I-cg-FqY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view alpha="0.59999999999999964" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmW-tZ-Voc">
+                                <rect key="frame" x="0.0" y="506" width="600" height="94"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTI-kI-88F">
+                                        <rect key="frame" x="515" y="25" width="58" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="58" id="LQ5-Ov-XuC"/>
+                                            <constraint firstAttribute="height" constant="44" id="s6z-VI-aKT"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="changecam.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ami-zs-P9a">
+                                        <rect key="frame" x="261" y="7" width="79" height="79"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="79" id="0CU-ex-0J8"/>
+                                            <constraint firstAttribute="height" constant="79" id="p2h-lP-wLg"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="circle.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnF-rE-1bC">
+                                        <rect key="frame" x="8" y="32" width="55" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="hMW-67-Dyp"/>
+                                            <constraint firstAttribute="width" constant="55" id="jN3-i0-eKV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                        <state key="normal" title="Vissza">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backToMain:" destination="Liz-0S-dSv" eventType="touchUpInside" id="CNe-L5-mgw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ami-zs-P9a" firstAttribute="top" secondItem="xmW-tZ-Voc" secondAttribute="top" constant="7" id="6I9-qT-OY2"/>
+                                    <constraint firstAttribute="height" constant="94" id="Am2-DS-5zg"/>
+                                    <constraint firstItem="bnF-rE-1bC" firstAttribute="leading" secondItem="xmW-tZ-Voc" secondAttribute="leading" constant="8" id="Dlv-gq-NYu"/>
+                                    <constraint firstAttribute="bottom" secondItem="ami-zs-P9a" secondAttribute="bottom" constant="8" id="Jtl-IV-oec"/>
+                                    <constraint firstAttribute="trailing" secondItem="kTI-kI-88F" secondAttribute="trailing" constant="27" id="PA6-ZW-lne"/>
+                                    <constraint firstItem="kTI-kI-88F" firstAttribute="top" secondItem="xmW-tZ-Voc" secondAttribute="top" constant="25" id="fMM-CT-dRF"/>
+                                    <constraint firstAttribute="bottom" secondItem="kTI-kI-88F" secondAttribute="bottom" constant="25" id="htY-xa-4iY"/>
+                                    <constraint firstAttribute="centerX" secondItem="ami-zs-P9a" secondAttribute="centerX" id="pds-0g-frK"/>
+                                    <constraint firstAttribute="bottom" secondItem="bnF-rE-1bC" secondAttribute="bottom" constant="25" id="tyP-aF-tTV"/>
+                                    <constraint firstItem="bnF-rE-1bC" firstAttribute="top" secondItem="xmW-tZ-Voc" secondAttribute="top" constant="32" id="vtG-bi-coS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.058823529409999999" green="0.47843137250000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BAY-S1-NaK" firstAttribute="top" secondItem="xmW-tZ-Voc" secondAttribute="bottom" id="Lrl-0w-Ste"/>
+                            <constraint firstAttribute="trailing" secondItem="xmW-tZ-Voc" secondAttribute="trailing" id="Th4-rF-MJX"/>
+                            <constraint firstItem="xmW-tZ-Voc" firstAttribute="leading" secondItem="G6I-cg-FqY" secondAttribute="leading" id="V59-SX-bpQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="actionButton" destination="ami-zs-P9a" id="Y34-vd-pmn"/>
+                        <outlet property="cameraControllView" destination="xmW-tZ-Voc" id="M2p-HI-SBi"/>
+                        <outlet property="switchingTheCamera" destination="kTI-kI-88F" id="58Z-oG-7wC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYc-ea-hFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="573" y="1331"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="changecam.png" width="58" height="44"/>
+        <image name="circle.png" width="134" height="134"/>
+    </resources>
 </document>

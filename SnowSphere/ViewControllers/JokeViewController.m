@@ -35,6 +35,9 @@
 - (IBAction)laughButton:(id)sender {
     [self.audioPlayer play];
 }
+- (IBAction)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 /*
 #pragma mark - Navigation

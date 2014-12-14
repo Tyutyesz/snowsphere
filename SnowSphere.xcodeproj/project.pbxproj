@@ -25,6 +25,11 @@
 		CE198A771A3E06DF002AB789 /* WhipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE198A761A3E06DF002AB789 /* WhipViewController.m */; };
 		CE198A7A1A3E0DC8002AB789 /* JokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE198A791A3E0DC8002AB789 /* JokeViewController.m */; };
 		CE198B251A3E0EB1002AB789 /* Ba-dum-tss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE198B241A3E0EB1002AB789 /* Ba-dum-tss.mp3 */; };
+		CE198B341A3E2D40002AB789 /* ChristmasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE198B331A3E2D40002AB789 /* ChristmasViewController.m */; };
+		CE198B371A3E2FAD002AB789 /* changecam.png in Resources */ = {isa = PBXBuildFile; fileRef = CE198B351A3E2FAD002AB789 /* changecam.png */; };
+		CE198B381A3E2FAD002AB789 /* changecam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE198B361A3E2FAD002AB789 /* changecam@2x.png */; };
+		CE198B3B1A3E308F002AB789 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = CE198B391A3E308F002AB789 /* circle.png */; };
+		CE198B3C1A3E308F002AB789 /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE198B3A1A3E308F002AB789 /* circle@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,12 @@
 		CE198A781A3E0DC8002AB789 /* JokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokeViewController.h; sourceTree = "<group>"; };
 		CE198A791A3E0DC8002AB789 /* JokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokeViewController.m; sourceTree = "<group>"; };
 		CE198B241A3E0EB1002AB789 /* Ba-dum-tss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ba-dum-tss.mp3"; sourceTree = "<group>"; };
+		CE198B321A3E2D40002AB789 /* ChristmasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChristmasViewController.h; sourceTree = "<group>"; };
+		CE198B331A3E2D40002AB789 /* ChristmasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChristmasViewController.m; sourceTree = "<group>"; };
+		CE198B351A3E2FAD002AB789 /* changecam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changecam.png; sourceTree = "<group>"; };
+		CE198B361A3E2FAD002AB789 /* changecam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "changecam@2x.png"; sourceTree = "<group>"; };
+		CE198B391A3E308F002AB789 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		CE198B3A1A3E308F002AB789 /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +166,10 @@
 		CE0BAA261A3B4FD500FE41CC /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				CE198B391A3E308F002AB789 /* circle.png */,
+				CE198B3A1A3E308F002AB789 /* circle@2x.png */,
+				CE198B351A3E2FAD002AB789 /* changecam.png */,
+				CE198B361A3E2FAD002AB789 /* changecam@2x.png */,
 				CE198B241A3E0EB1002AB789 /* Ba-dum-tss.mp3 */,
 				CE198A721A3E03A9002AB789 /* WhipCrack-Short.mp3 */,
 				CE0BAA271A3B4FF500FE41CC /* christmas-bells.mp3 */,
@@ -173,6 +188,8 @@
 				CE198A761A3E06DF002AB789 /* WhipViewController.m */,
 				CE198A781A3E0DC8002AB789 /* JokeViewController.h */,
 				CE198A791A3E0DC8002AB789 /* JokeViewController.m */,
+				CE198B321A3E2D40002AB789 /* ChristmasViewController.h */,
+				CE198B331A3E2D40002AB789 /* ChristmasViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -257,9 +274,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE198B381A3E2FAD002AB789 /* changecam@2x.png in Resources */,
 				CE0BAA2C1A3B4FF500FE41CC /* snow~iphone.png in Resources */,
 				CE198B251A3E0EB1002AB789 /* Ba-dum-tss.mp3 in Resources */,
 				CE0BAA0C1A3B4C0500FE41CC /* Main.storyboard in Resources */,
+				CE198B3C1A3E308F002AB789 /* circle@2x.png in Resources */,
+				CE198B3B1A3E308F002AB789 /* circle.png in Resources */,
+				CE198B371A3E2FAD002AB789 /* changecam.png in Resources */,
 				CE198A741A3E03A9002AB789 /* WhipCrack-Short.mp3 in Resources */,
 				CE0BAA111A3B4C0500FE41CC /* LaunchScreen.xib in Resources */,
 				CE0BAA2A1A3B4FF500FE41CC /* christmas-bells.mp3 in Resources */,
@@ -285,6 +306,7 @@
 				CE0BAA031A3B4C0500FE41CC /* AppDelegate.m in Sources */,
 				CE0BAA061A3B4C0500FE41CC /* SnowSphere.xcdatamodeld in Sources */,
 				CE0BAA091A3B4C0500FE41CC /* ViewController.m in Sources */,
+				CE198B341A3E2D40002AB789 /* ChristmasViewController.m in Sources */,
 				CE0BAA301A3B50A500FE41CC /* MainViewController.m in Sources */,
 				CE0BAA001A3B4C0500FE41CC /* main.m in Sources */,
 				CE198A771A3E06DF002AB789 /* WhipViewController.m in Sources */,
