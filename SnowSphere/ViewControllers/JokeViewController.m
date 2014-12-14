@@ -1,76 +1,39 @@
 //
-//  MainViewController.m
+//  JokeViewController.m
 //  SnowSphere
 //
-//  Created by Csorba Mátyás on 12/12/14.
+//  Created by Csorba Mátyás on 14/12/14.
 //  Copyright (c) 2014 Csorba Mátyás. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "JokeViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "snowView.h"
 
-@interface MainViewController ()
+@interface JokeViewController ()
 
 @property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 @end
 
-@implementation MainViewController {
-    snowView *snowOverlay;
-}
-
-
-
-- (BOOL)canBecomeFirstResponder{
-    
-    return YES;
-}
-
--(void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
-{
-    if (event.subtype == UIEventSubtypeMotionShake) {
-        [self playSound];
-    }
-}
+@implementation JokeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSError *error;
-    NSString *soundPath =[[NSBundle mainBundle] pathForResource:@"christmas-bells" ofType:@"mp3"];
+    NSString *soundPath =[[NSBundle mainBundle] pathForResource:@"Ba-dum-tss" ofType:@"mp3"];
     NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
     AVAudioPlayer *theAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:&error];
     [theAudioPlayer prepareToPlay];
     self.audioPlayer = theAudioPlayer;
-    
-    self.navigationController.navigationBarHidden = YES;
-    snowOverlay = [[snowView alloc] initWithFrame:self.view.frame];
-    [self.view addSubview:snowOverlay];
-    
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    [self becomeFirstResponder];
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
-    [self resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
--(IBAction)playSound
-{
+- (IBAction)laughButton:(id)sender {
     [self.audioPlayer play];
-    [snowOverlay beginSnowAnimation];
 }
 
 /*

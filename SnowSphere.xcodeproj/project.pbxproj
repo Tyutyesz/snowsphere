@@ -21,6 +21,10 @@
 		CE0BAA301A3B50A500FE41CC /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0BAA2F1A3B50A500FE41CC /* MainViewController.m */; };
 		CE0BAA321A3B55C300FE41CC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0BAA311A3B55C300FE41CC /* AVFoundation.framework */; };
 		CE198A701A3DFB86002AB789 /* snowView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE198A6F1A3DFB86002AB789 /* snowView.m */; };
+		CE198A741A3E03A9002AB789 /* WhipCrack-Short.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE198A721A3E03A9002AB789 /* WhipCrack-Short.mp3 */; };
+		CE198A771A3E06DF002AB789 /* WhipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE198A761A3E06DF002AB789 /* WhipViewController.m */; };
+		CE198A7A1A3E0DC8002AB789 /* JokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE198A791A3E0DC8002AB789 /* JokeViewController.m */; };
+		CE198B251A3E0EB1002AB789 /* Ba-dum-tss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CE198B241A3E0EB1002AB789 /* Ba-dum-tss.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,12 @@
 		CE0BAA311A3B55C300FE41CC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CE198A6E1A3DFB86002AB789 /* snowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = snowView.h; sourceTree = "<group>"; };
 		CE198A6F1A3DFB86002AB789 /* snowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = snowView.m; sourceTree = "<group>"; };
+		CE198A721A3E03A9002AB789 /* WhipCrack-Short.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "WhipCrack-Short.mp3"; sourceTree = "<group>"; };
+		CE198A751A3E06DF002AB789 /* WhipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhipViewController.h; sourceTree = "<group>"; };
+		CE198A761A3E06DF002AB789 /* WhipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhipViewController.m; sourceTree = "<group>"; };
+		CE198A781A3E0DC8002AB789 /* JokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokeViewController.h; sourceTree = "<group>"; };
+		CE198A791A3E0DC8002AB789 /* JokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokeViewController.m; sourceTree = "<group>"; };
+		CE198B241A3E0EB1002AB789 /* Ba-dum-tss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ba-dum-tss.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +155,8 @@
 		CE0BAA261A3B4FD500FE41CC /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				CE198B241A3E0EB1002AB789 /* Ba-dum-tss.mp3 */,
+				CE198A721A3E03A9002AB789 /* WhipCrack-Short.mp3 */,
 				CE0BAA271A3B4FF500FE41CC /* christmas-bells.mp3 */,
 				CE0BAA281A3B4FF500FE41CC /* snow@2x~iphone.png */,
 				CE0BAA291A3B4FF500FE41CC /* snow~iphone.png */,
@@ -157,6 +169,10 @@
 			children = (
 				CE0BAA2E1A3B50A500FE41CC /* MainViewController.h */,
 				CE0BAA2F1A3B50A500FE41CC /* MainViewController.m */,
+				CE198A751A3E06DF002AB789 /* WhipViewController.h */,
+				CE198A761A3E06DF002AB789 /* WhipViewController.m */,
+				CE198A781A3E0DC8002AB789 /* JokeViewController.h */,
+				CE198A791A3E0DC8002AB789 /* JokeViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -242,7 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0BAA2C1A3B4FF500FE41CC /* snow~iphone.png in Resources */,
+				CE198B251A3E0EB1002AB789 /* Ba-dum-tss.mp3 in Resources */,
 				CE0BAA0C1A3B4C0500FE41CC /* Main.storyboard in Resources */,
+				CE198A741A3E03A9002AB789 /* WhipCrack-Short.mp3 in Resources */,
 				CE0BAA111A3B4C0500FE41CC /* LaunchScreen.xib in Resources */,
 				CE0BAA2A1A3B4FF500FE41CC /* christmas-bells.mp3 in Resources */,
 				CE0BAA2B1A3B4FF500FE41CC /* snow@2x~iphone.png in Resources */,
@@ -269,7 +287,9 @@
 				CE0BAA091A3B4C0500FE41CC /* ViewController.m in Sources */,
 				CE0BAA301A3B50A500FE41CC /* MainViewController.m in Sources */,
 				CE0BAA001A3B4C0500FE41CC /* main.m in Sources */,
+				CE198A771A3E06DF002AB789 /* WhipViewController.m in Sources */,
 				CE198A701A3DFB86002AB789 /* snowView.m in Sources */,
+				CE198A7A1A3E0DC8002AB789 /* JokeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
